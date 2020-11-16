@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Jogo da Memória - Família M</title>
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<!-- Modal HTML embedded directly into document -->
+<div id="modal-win" class="modal">
+    <a href="#" rel="modal:close">
+        <img width="100%" src="img/winner.png">
+    </a>
+</div>
+
+<!-- Link to open the modal -->
+<!-- <p><a href="#modal-win" rel="modal:open">Open Modal</a></p> -->
+<!-- <p><a href="#modal-win" onclick="winner()">Open Modal</a></p> -->
+    <header> 
+        <button class="button" onclick="reset()">Recomeçar</button>
+    </header>
+    <main>
+        <div class="memory-game">
+        
+        <div class="card" data-card="ma">
+            <img src="./img/img-MA.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="me">
+            <img src="./img/img-ME.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mi">
+            <img src="./img/img-MI.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mo">
+            <img src="./img/img-MO.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mu">
+            <img src="./img/img-MU.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mao">
+            <img src="./img/img-MAO.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="ma">
+            <img src="./img/img-MA.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="me">
+            <img src="./img/img-ME.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mi">
+            <img src="./img/img-MI.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mo">
+            <img src="./img/img-MO.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mu">
+            <img src="./img/img-MU.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mao">
+            <img src="./img/img-MAO.jpg" alt="face da carta" class="card-front">
+            <img src="./img/img-verso.jpg" alt="verso da carta" class="card-back">
+        </div>
+    </div>
+    </main>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+
+</html>

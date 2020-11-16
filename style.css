@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #F8FBEF;/*#F2FBEF;/*#F8FBEF;/*#FBF8EF;/*rgb(54, 189, 189);*/
+}
+main {
+    display: flex;
+}
+.memory-game {
+    height: 550px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+.card {
+    height: calc( 33.333% - 10px);
+    width: calc(25% - 10px);
+    min-width: 175px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
+    cursor: pointer;
+    transform: scale(1);
+    border-radius: 5px;
+    transform-style: preserve-3d; /* Não deixa o elemento achatado no plano*/
+    transition: transform .9s;
+}
+.card:active {
+    transform: scale(0.97);
+    transition: transform .3s;
+}
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: orange;/*#ffffff;*/
+    backface-visibility: hidden; /* uma propriedade que retira o verso do elemento*/
+}
+.card-front {
+    transform: rotateY(180deg);
+}
+
+/* flip card animation*/
+.card.flip {
+    transform: rotateY(180deg);
+}
+.modal {
+    padding: 0;
+    background-color: #163022;
+}
+
+header {
+
+    max-width: 900px;
+    margin: 10px auto 5px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button{
+    padding: 10px 20px;
+    background-color:#0195D3;
+    border: none;
+    color: #F8FBEF;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button:hover, focus, active, selected{
+    background-color: #C35A0F;
+    outline: none;
+}
+
